@@ -97,7 +97,11 @@ body {
     }
 
     .user-info-container {
-        padding: 4rem;
+        padding: 4rem 4rem 2.4rem 4rem;
+    }
+
+    .name-location h1 {
+        margin: 0.5rem 0 1.2rem 0;
     }
 
     .btn {
