@@ -86,3 +86,29 @@ body {
 .btn:hover > a {
     color: var(--grey-700);
 }
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 45.6rem;
+        height: 61.1rem;
+    }
+
+    .user-info-container {
+        padding: 4rem;
+    }
+
+    .btn {
+        width: 37.6rem;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .card {
+        width: 38.4rem;
+        height: 61.1rem;
+    }
+
+    .btn {
+        width: 30.4rem;
+    }
+}
