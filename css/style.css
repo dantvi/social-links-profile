@@ -1,8 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    background: var(--grey-900);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 32.7rem;
+    height: 57.9rem;
+    border-radius: 12px;
+    background: var(--grey-800);
+}
+
+.user-info-container {
+    padding: 2.4rem;
+}
+
+.user-info-container img {
+    border-radius: 50%;
+    width: 8.8rem;
+    height: 8.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.name-location {
+    margin-bottom: 2.4rem;
+}
+
+.name-location h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.name-location span {
+    display: inline-block;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 27.9rem;
+    background: var(--grey-700);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 1.2rem 0;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: var(--grey-700);
+}
+
+.btn:hover > a {
+    color: var(--grey-700);
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 45.6rem;
+        height: 61.1rem;
+    }
+
+    .user-info-container {
+        padding: 4rem;
+    }
+
+    .btn {
+        width: 37.6rem;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .card {
+        width: 38.4rem;
+        height: 61.1rem;
+    }
+
+    .btn {
+        width: 30.4rem;
+    }
 }
