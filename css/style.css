@@ -62,3 +62,27 @@ body {
     color: var(--green);
     font-weight: 600;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 27.9rem;
+    background: var(--grey-700);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 1.2rem 0;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: var(--grey-700);
+}
+
+.btn:hover > a {
+    color: var(--grey-700);
+}
